@@ -1,0 +1,16 @@
+ @pytest.mark.second
+    def test_data(self):
+        """Function clicking on Queries panel and move control to search text box"""
+        # locators for queries
+        xpath4 = '/html/body/div/div[1]/nav/ul/div[6]/li/span'
+        queries = self.driver.find_element(by=By.XPATH, value=xpath4)
+        time.sleep(10)
+        # clicking on queries
+        queries.click()
+        time.sleep(10)
+        # locator for search text box
+        xpath5 = '/html/body/div/div[2]/div/div[1]/div[2]/input'
+        search_click = self.driver.find_element(by=By.XPATH, value=xpath5)
+        # moving control to search textbox
+        search_click.click()
+        time.sleep(5)
