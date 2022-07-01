@@ -1,0 +1,13 @@
+@pytest.mark.third
+    def test_excel(self):
+        """Function extract data from left panel and printing the extracted result"""
+        # locator for Extracting all the information from left-hand side ribbon from the portal
+        taskname =self.driver.find_elements(by=By.XPATH, value="//div[contains(@class,'ml-4')]")
+        mytask = []
+        # printing all the information from left-hand side ribbon from the guvi portal
+        for task in taskname:
+            print(task.text)
+            mytask.append(task.text)
+        # Exporting all the data to excel
+        df_data = pd.DataFrame(mytask)
+        df_data.to_excel("Workbook.xlsx", index=False)
