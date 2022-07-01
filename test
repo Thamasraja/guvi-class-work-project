@@ -5,3 +5,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 import pandas as pd
 import pytest
+
+class Test:
+    """Class representing a Test"""
+    url = "https://www.zenclass.in/class"
+    driver = webdriver.Firefox()
+    driver.get(url)
+    driver.implicitly_wait(5)
+    driver.maximize_window()
