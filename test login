@@ -3,10 +3,10 @@
         """Function that login into application and verify the title"""
         # locator for username textbox
         xpath1 = '//*[@id="root"]/div/div/div[1]/div[2]/div/div[1]/form/div[1]/div/input'
-        self.driver.find_element(by=By.XPATH, value=xpath1).send_keys("rajapriya371@gmail.com")
+        self.driver.find_element(by=By.XPATH, value=xpath1).send_keys("thamasraja1990@gmail.com")
         # locator for password textbox and entering password
         xpath2 = '//*[@id="root"]/div/div/div[1]/div[2]/div/div[1]/form/div[2]/div/input'
-        self.driver.find_element(by=By.XPATH, value=xpath2).send_keys("India@123")
+        self.driver.find_element(by=By.XPATH, value=xpath2).send_keys("Thamas@123")
         # locator for Login and clicking on login button
         xpath3 = '//*[@id="root"]/div/div/div[1]/div[2]/div/div[1]/form/button'
         self.driver.find_element(by=By.XPATH, value=xpath3).click()
